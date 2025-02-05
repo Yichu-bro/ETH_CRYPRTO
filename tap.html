@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapswap Cenima Codes</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/cryptocurrency.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dU6wzTx6E4nOUIHgJ3jHzWjxL5jOT6QPSOXpCXxxdI9iw+P5En6g5BQ1cnJTLm4g3ElM3Hk1e1tYp/eYc9XhQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6200ea, #9c27b0);
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 12px 20px;
+            width: 60%;
+            max-width: 500px;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            font-size: 1rem;
+        }
+
+        .search-bar input[type="text"]:focus {
+            outline: none;
+            width: 65%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .task {
+            background: white;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .task:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .task h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #6200ea;
+        }
+
+        .task-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #9c27b0;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+            transform: scale(1.05);
+        }
+
+        .copy-message {
+            color: green;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #9c27b0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-dev {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .contact-dev i {
+            font-size: 1.2rem;
+            color: #00acee;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-coins"></i> Tapswap Cenima Codes</h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchQuery" placeholder="Search tasks..." oninput="filterTasks()">
+    </div>
+
+    <main>
+        <section class="task-list" id="taskList"></section>
+    </main>
+
+    <footer>
+        <div class="contact-dev">
+            <i class="fab fa-telegram-plane"></i>
+            <a href="https://t.me/leap10" target="_blank">Contact Dev</a>
+        </div>
+        <p>2025, Ethiopia, Addis Ababa</p>
+    </footer>
+
+    <script>
+        const tasks = [
+            { title: "Transform Your Garage", code: "7g7gt" },
+{ title: "Boosted My Crypto", code: "6tto" },
+{ title: "10 Genius Ways to Make", code: "5set" },
+{ title: "The Best 5 Tools for Making", code: "8oba" },
+{ title: "Earn $7,450 a Month", code: "erda" },
+{ title: "How I Made Money Using", code: "4ssh" },
+{ title: "Emergency Cash", code: "3ees" },
+{ title: "Make Money from Home", code: "pedrp" },
+{ title: "Start Dropshipping in 2025", code: "a4al" },
+{ title: "From Sketch to Store", code: "qurt" },
+{ title: "Turn Your Garage", code: "5srt" },
+{ title: "5 Must-Have Tools", code: "8o7o" },
+{ title: "$7,450/Month Passive Income", code: "7dyh" },
+{ title: "The Future of Making Money", code: "r86h" },
+{ title: "How to Make Money", code: "pi9s" },
+{ title: "10 Creative Ways to Make Money", code: "4ledr" },
+{ title: "8 Profitable Products", code: "fal7" },
+{ title: "Started My Clothing Brand", code: "i3rt" },
+{ title: "Turn Notion Templates", code: "r2da" },
+{ title: "Want to Make Money with AR", code: "efsh" },
+{ title: "5 Proven Hacks to Make Money", code: "anes" },
+{ title: "Boost Your Income from Home", code: "2rrp" },
+{ title: "Don't Miss These 8", code: "kral" },
+{ title: "Want to Start a Clothing Line", code: "murt" },
+{ title: "Unbelievable Stories of People", code: "mx3e" },
+{ title: "How to Grow a Lucrative", code: "crsb" },
+{ title: "Earn $7,450/Month", code: "ufa4" },
+{ title: "How to Turn Augmented", code: "ate5" },
+{ title: "Need Cash by Tomorrow", code: "kavo" },
+{ title: "10 Simple Ways to Earn", code: "g288" },
+{ title: "8 Dropshipping Products", code: "6nbe" },
+{ title: "From Idea to Reality", code: "kime" },
+{ title: "From Broke to Rich", code: "27ne" },
+{ title: "Want to Stay Anonymous?", code: "mzeu" },
+{ title: "Selling Notion Templates", code: "ufi4" },
+{ title: "10 Proven Ways", code: "atir" },
+{ title: "5 Ways to Make Money", code: "kaaj" },
+{ title: "Extra Cash from Home", code: "g2p5" },
+{ title: "Top 8 Winning Products", code: "6nwi" },
+{ title: "Launch a Successful Clothing Brand", code: "kist" },
+{ title: "Shocking Success Stories", code: "l6ue" },
+{ title: "Made a Successful YouTube Channel", code: "3vcr" },
+{ title: "Crypto Investors Became", code: "orpe" },
+{ title: "The Secret to Building", code: "qx8q" },
+{ title: "From Zero to $4,000", code: "7ema" },
+{ title: "How to Budget Like a Millionaire", code: "vtor" },
+{ title: "Millionaire-Making Crypto", code: "abbt" },
+{ title: "Make Passive Income", code: "naqg" },
+{ title: "TapSwap Airdrop", code: "sode" },
+{ title: "Earn Income with Your Car", code: "rold" },
+{ title: "Their Incredible Stories", code: "vvae" },
+{ title: "Start a YouTube Channel", code: "vuiv" },
+{ title: "$4,000/Month on Amazon", code: "4war" },
+{ title: "Want Financial Freedom", code: "vuaw" },
+{ title: "Want to Get Rich?", code: "wnob" },
+{ title: "Airbnb for Beginners", code: "ivsv" },
+{ title: "The Latest TawSwap", code: "rnxe" },
+{ title: "Drive Your Way", code: "kasd" },
+{ title: "Earn Over $4,000 Monthly", code: "rocr" },
+{ title: "Avoid Financial Struggles", code: "vu3d" },
+{ title: "The Best Crypto", code: "ycpn" },
+{ title: "Guide to Earning Big", code: "kke2" },
+{ title: "Claim Your TapSwap", code: "ieee" },
+{ title: "10 Creative Ways", code: "9erd" },
+{ title: "Turn Your Hobby into Income", code: "ch53" },
+{ title: "Turn Your Dreams", code: "sdbs" },
+{ title: "$4,000 a Month on Amazon", code: "capx" },
+{ title: "Budgeting Secrets Revealed", code: "vlsi" },
+{ title: "Which Crypto Platforms", code: "2nez" },
+{ title: "Make Money Fast", code: "sacz" },
+{ title: "TapSwap Update", code: "waze" },
+{ title: "Easy Money Using Your Car", code: "q4vd" },
+{ title: "Monetize Your Hobby", code: "svth" },
+{ title: "Franchise Business", code: "em74" },
+{ title: "Stop Being Broke!", code: "vtaz" },
+{ title: "Top Crypto Exchanges", code: "qhto" },
+{ title: "Turn Your Space Into Cash", code: "cah5" },
+{ title: "TapSwap Airdrop", code: "fn3e" },
+{ title: "Turn Your Car Into Cash", code: "s2od" },
+{ title: "Make $4,000+/Month", code: "pvpd" },
+{ title: "Turning Your Hobby", code: "mnde" },
+{ title: "Zero Experience?", code: "syex" },
+{ title: "Copy Trading on Bybit", code: "snvs" },
+{ title: "Getting Free Products", code: "wt1e" },
+{ title: "Secret to Free Bitcoin", code: "sss4" },
+{ title: "Turn Your Favourite Hobby", code: "me2f" },
+{ title: "Successful Business", code: "rgn4" },
+{ title: "Earning $5,000+ Per Month", code: "ckea" },
+{ title: "Unlock Free Products", code: "fifa" },
+{ title: "Want Free Bitcoin", code: "rwea" },
+{ title: "Bybit Copy Trading", code: "xgad" },
+{ title: "Free Products from Big Brands", code: "g5ly" },
+{ title: "Unlock Free Bitcoin", code: "d6dq" },
+{ title: "Start Monetizing Today", code: "gr6w" },
+{ title: "Business with a Franchise", code: "atwc" },
+{ title: "Bybit Copy Trading", code: "vs2j" },
+{ title: "Get Tons of Free Samples", code: "sri3" },
+{ title: "Get Free Cryptocurrency", code: "pcde" },
+{ title: "Make $5,000+ Per Month", code: "fma4" },
+{ title: "Top Brands in 2025", code: "afdf" },
+{ title: "Earn Free Bitcoin", code: "a7a2" },
+{ title: "Make Your Dreams A Reality", code: "tenp" },
+{ title: "Instagram Into A $100/Day", code: "exxr" },
+{ title: "5,000$ In 30 Days", code: "aact" },
+{ title: "Online Business In 2025", code: "rmap" },
+{ title: "Want To Achieve It All", code: "qxun" },
+{ title: "$100+ Per Day on Instagram", code: "btxe" },
+{ title: "Earning $5,000 In 30 Days", code: "atnr" },
+{ title: "Online Business Made Easy", code: "ravd" },
+{ title: "Binance Made Easy", code: "gpkt" },
+{ title: "Boost Your Income in 2025", code: "c7s3" },
+{ title: "Free Gifts and Rewards", code: "fesf" },
+{ title: "Free Online Courses", code: "wowl" },
+{ title: "Unlock Your Potential", code: "c46r" },
+{ title: "Earn $100 Every Day", code: "ouns" },
+{ title: "Turn X Into A $5,000/Month", code: "astv" },
+{ title: "Opening An Online Business", code: "rzr2" },
+{ title: "Make Money on Binance", code: "ema9" },
+{ title: "Make 2025 Your Year", code: "d5n5" },
+{ title: "Free Gifts from Loyalty Programs", code: "v2q3" },
+{ title: "Making Money With Free Online", code: "occl" },
+{ title: "You Desire In Life", code: "cdae" },
+{ title: "Earning $100+ Per Day", code: "9ckt" },
+{ title: "$5,000 In Just 30 Days", code: "ambq" },
+{ title: "Online Business Today", code: "r5bm" },
+{ title: "Profiting on Binance", code: "rvs6" },
+{ title: "High-Paying Side Hustles", code: "g6er" },
+{ title: "Free Stuff Every Month", code: "3sa9" },
+{ title: "Learn to Monetize", code: "tt4l" },
+{ title: "5 Secrets You Need to Know", code: "azw1" },
+{ title: "Make $100+ Daily", code: "ace1" },
+{ title: "Your First Online Business", code: "rkox" },
+{ title: "Made $5,000", code: "a4xe" },
+{ title: "Easy Ways To Earn", code: "kn5f" },
+{ title: "The Hottest Side Hustles", code: "mrm4" },
+{ title: "Secret Tricks", code: "esba" },
+{ title: "Free Online Courses", code: "rbol" },
+{ title: "Top Side Hustle", code: "rg7e" },
+{ title: "Unlock Free Rewards", code: "rm8b" },
+{ title: "Get Free Online Courses", code: "kpsl" },
+{ title: "Make Money Without Leaving", code: "orrm" },
+{ title: "Monetizing Your Content", code: "nfgv" },
+{ title: "Earning $1,000 In Crypto", code: "mga7" },
+{ title: "Earn 10k On TikTok", code: "e53e" },
+{ title: "Flip and Earn", code: "h3xr" },
+{ title: "Earn $100+ Daily", code: "kd5r" },
+{ title: "Earn $5,312 Per Month", code: "htf5" },
+{ title: "Monetize Your Content", code: "hijm" },
+{ title: "Make $1,000 In Crypto", code: "ey1z" },
+{ title: "From Likes to Cash", code: "8uyt" },
+{ title: "Resell and Profit", code: "ica4" },
+{ title: "Boost Your Income", code: "tsys" },
+{ title: "Proven Strategies", code: "3agg" },
+{ title: "Simple Strategies", code: "i1sm" },
+{ title: "Crypto Without Any Investment", code: "da1q" },
+{ title: "TikTok Into A $10k Income Stream", code: "dae1" },
+{ title: "Making Money Through Reselling", code: "afav" },
+{ title: "Side Hustles on Your Phone", code: "dd9i" },
+{ title: "Lucrative Ways to Make Money", code: "gld5" },
+{ title: "Turn Content Into Cash", code: "hcv7" },
+{ title: "No Investment Needed", code: "gx2x" },
+{ title: "10k On TikTok", code: "cf3v" },
+{ title: "Reselling Into Profit", code: "nfbn" },
+{ title: "Side Hustles From Your Phone", code: "4u7i" },
+{ title: "Website Without Any Coding", code: "f3e8" },
+{ title: "Monetizing Your Content", code: "pge3" },
+{ title: "Money-Making Ideas", code: "pf4t" },
+{ title: "No Upfront Investment", code: "snp5" },
+{ title: "Using TikTok", code: "x3pc" },
+{ title: "Make Money by Reselling", code: "tp3j" },
+{ title: "Phone-Based Side Hustles", code: "ligq" },
+{ title: "3D Printing for Fashion", code: "yagd" },
+{ title: "Earn Money Quickly", code: "oxsq" },
+{ title: "Zero-Waste Product Line", code: "3qec" },
+{ title: "Lucrative Career", code: "ge7r" },
+{ title: "Unlock Massive Earnings", code: "e42s" },
+{ title: "Unlock Hidden Income", code: "fla8" },
+{ title: "Low Cost Franchises", code: "tfgk" },
+{ title: "AI Dropshipping", code: "is1p" },
+{ title: "Life Lessons I Learned", code: "qrze" },
+{ title: "Craft An Online Portfolio", code: "eq4d" },
+{ title: "Build A Website Easily", code: "ct39" },
+{ title: "Financial Goals", code: "s3vr" },
+{ title: "Save More With Less", code: "tf8m" },
+{ title: "Maximize Your Time", code: "w25gc" },
+{ title: "Marketing Plan for Your Business", code: "e2yt" },
+{ title: "Trending Products", code: "8zts" },
+{ title: "Google Books and AI Combined", code: "hnsu" },
+{ title: "Leverage LinkedIn", code: "rt49" },
+{ title: "Profitable Clothing Line", code: "is8n" },
+{ title: "Create and Monetize", code: "ncns" },
+{ title: "Tips for new Entrepreneurs", code: "adtn" },
+{ title: "From Beginner To Expert", code: "4bvr" },
+{ title: "High CPM In 2024-2025", code: "hd27" },
+{ title: "Profit From Expertise", code: "ut4a" },
+{ title: "Profitable Franchises", code: "r4y1" },
+{ title: "AI-Driven Dropshipping", code: "ds4h" },
+{ title: "Powerful Lessons", code: "y3oe" },
+{ title: "Stunning Portfolio", code: "r7ke" },
+{ title: "Creating A Website", code: "ivwn" },
+{ title: "Life-Changing", code: "c2nv" },
+{ title: "Minimalist Principles", code: "v4ek" },
+{ title: "Must-Have Al Apps", code: "wiy6n" },
+{ title: "Maximize Your Small Business", code: "rz9t" },
+{ title: "Crack the Code", code: "uf5c" },
+{ title: "Passive Income", code: "ask1" },
+{ title: "Outsource Without Breaking the Bank", code: "h3rk" },
+{ title: "LinkedIn Success", code: "e33y" },
+{ title: "Google Search Hacks", code: "bent" },
+{ title: "Student Entrepreneurs", code: "ul2e" },
+{ title: "Budget Travel Secrets", code: "m43s" },
+{ title: "Secure Your Future", code: "6mr3" },
+{ title: "Boost Your Productivity", code: "cebc" },
+{ title: "From Setup To Sales", code: "adir" },
+{ title: "Own Fashion Brand", code: "9tdx" },
+{ title: "Successful Blog", code: "dran" },
+{ title: "Zero-Waste Product Line", code: "ab1s" },
+{ title: "Professional Problem Solver", code: "colr" },
+{ title: "YouTube Niches", code: "c1c2" },
+{ title: "Monetize Your Expertise", code: "sd63" },
+{ title: "Low-Cost Franchises", code: "3o9t" },
+{ title: "Secret Formula", code: "og9p" },
+{ title: "Life Lessons", code: "tnfe" },
+{ title: "Irresistible Online Portfolio", code: "lg2b" },
+{ title: "Professional Website", code: "6msq" },
+{ title: "Financial Goals", code: "x4lh" },
+{ title: "Created A Budget", code: "g1mg" },
+{ title: "Unlock Your Productivity", code: "wsct7" },
+{ title: "Winning Marketing Strategy", code: "f5kt" },
+{ title: "Seasonal Products", code: "dd1h" },
+{ title: "Hidden Profits", code: "gov2" },
+{ title: "Unlock Career Opportunities", code: "r8a6" },
+{ title: "Outsource Like a Boss", code: "ey4a" },
+{ title: "Making $500/Day", code: "kc7n" },
+{ title: "Be Your Own Boss", code: "zhg8" },
+{ title: "Travel the World", code: "t4rs" },
+{ title: "10 Mistakes To Avoid", code: "dpf7" },
+{ title: "Maximizing Your Productivity", code: "etrs" },
+{ title: "Make Money Fast", code: "f1n6" },
+{ title: "Launch Your TikTok Shop", code: "cacn" },
+{ title: "Build A One-Person Business", code: "fb75" },
+{ title: "Full Roadmap", code: "ndyn" },
+{ title: "Master Negotiation", code: "gtge" },
+{ title: "Easiest Way to Start", code: "gr3k" },
+{ title: "Winning Team", code: "twd7" },
+{ title: "From Zero To Sale", code: "avym" },
+{ title: "Zero To Hero", code: "s4bd" },
+{ title: "Break Free", code: "5j5g" },
+{ title: "From Photo To Paychecks", code: "xt6c" },
+{ title: "Billionaires Seal the Deal", code: "f5aa" },
+{ title: "Furniture Flipping", code: "c73e" },
+{ title: "Personalized Gifts", code: "e5hn" },
+{ title: "Shopify Dropshipping Blueprint", code: "jizf" },
+{ title: "Ultimate Startup Team", code: "sec3" },
+{ title: "From 9-to-5 to Financial Freedom", code: "jtxe" },
+{ title: "Laser Engraving", code: "svfq" },
+{ title: "Solo Business", code: "ttfl" },
+{ title: "Antique Furniture", code: "evqu" },
+{ title: "Rules Billionaires", code: "ttci" },
+{ title: "Fake Paparazzi Business", code: "wacr" },
+{ title: "Escape the Rat Race", code: "rfa4" },
+{ title: "Shopify Dropshipping Store", code: "5gpb" },
+{ title: "Perfect Team for Business", code: "daf9" },
+{ title: "Flip Antique Furniture", code: "awai" },
+{ title: "Dropshipping On Shopify", code: "smo2" },
+{ title: "Profitable Gift Business", code: "a7ds" },
+{ title: "Pretending to Be a Paparazzi", code: "b6ta" },
+{ title: "From Scratch to Success", code: "d46k" },
+{ title: "Billionaire Negotiation Tactics", code: "g3ov" },
+{ title: "From Vintage To Valuable", code: "nm4t" },
+{ title: "Shopify Dropshipping", code: "sc9h" },
+{ title: "Unstoppable Business Team", code: "ea2r" },
+{ title: "Old Furniture Into Cash", code: "ah46" },
+{ title: "Blueprint To Freedom", code: "stxc" },
+{ title: "One-Person Business", code: "t8ui" },
+{ title: "Personalized Gifts That Sell", code: "ljw3" },
+{ title: "Secrets Of Billionaire", code: "n2er" },
+{ title: "Fake Paparazzi", code: "k3s8" },
+{ title: "Build Your Dream Team", code: "m4p4" },
+{ title: "Custom Clothing", code: "ix5n" },
+{ title: "Money-Making Machine", code: "he39" },
+{ title: "From Idea to Impact", code: "w3s2" },
+{ title: "Problem-Solving Skills", code: "7ffr" },
+{ title: "High CPM", code: "cisf" },
+{ title: "Franchise Opportunities", code: "vdsp" },
+{ title: "Unexpected Ways", code: "w2um" },
+{ title: "Franchise Opportunities", code: "vdsp" },
+{ title: "AI-Powered Dropshipping", code: "d5rr" },
+{ title: "Hard Truths", code: "b8ee" },
+{ title: "Online Portfolio", code: "g3ix" },
+{ title: "Website From Scratch", code: "sweb" },
+{ title: "Financial Milestones", code: "o6ma" },
+{ title: "Automate Your Day", code: "wb52" },
+{ title: "Financial Freedom", code: "nu4d" },
+{ title: "Marketing Plan", code: "s2rt" },
+{ title: "Winning Dropshipping Products", code: "p7oc" },
+{ title: "Google Books", code: "4osq" },
+{ title: "Master LinkedIn", code: "5mre" },
+{ title: "Save Time And Money", code: "dw61" },
+{ title: "People Finaces", code: "lxeo" },
+{ title: "Travel On Budget", code: "8exa" },
+{ title: "Student Side Hustles", code: "a2p1" },
+{ title: "Searchers Into $500/Day", code: "j4qd" },
+{ title: "Solopreneur Success", code: "tazk" },
+{ title: "TikTok Shop", code: "alam" },
+{ title: "Stop Wasting Time", code: "wpa2" },
+{ title: "Effective Budget", code: "8bqb" },
+{ title: "Financial Goals", code: "gjsa" },
+{ title: "Marketing Plan", code: "imat" },
+{ title: "Maximize Your Sales", code: "cp4r" },
+{ title: "Al Tools", code: "wb48" },
+{ title: "LinkedIn Hacks", code: "gkca" },
+{ title: "Outsourcing Hacks", code: "na7l" },
+{ title: "Make $500 Daily", code: "5ftu" },
+{ title: "Best Business Ideas", code: "c3oo" },
+{ title: "Genius Hacks", code: "nd5n" },
+{ title: "Worst Money Mistakes", code: "tovw" },
+{ title: "Stay Focused", code: "wsva" },
+{ title: "TikTok Shop Dropshipping", code: "bola" },
+{ title: "Own Clothing Line", code: "pzrw" },
+{ title: "Blog from Scratch", code: "gz53" },
+{ title: "Successful Zero-Waste Brand", code: "8f3f" },
+{ title: "Get Paid to Solve Problems", code: "m3sr" },
+{ title: "High CPM YouTube Niches", code: "4wn5" },
+{ title: "Turn Your Knowledge", code: "5uvn" },
+{ title: "Best Affordable Franchises", code: "m9sq" },
+{ title: "Dropshipping With AI", code: "kr32" },
+{ title: "Knew Before Turning 30", code: "fv3e" },
+{ title: "Small Business", code: "ofv3" },
+{ title: "Online Portfolio", code: "b5ah" },
+{ title: "Google Search", code: "es8m" },
+{ title: "Business Ideas", code: "7sg9" },
+{ title: "Save Money", code: "r4iw" },
+{ title: "Financial Traps", code: "hmsy" },
+{ title: "Productivity Hacks", code: "mfpi" },
+{ title: "TikTok Shop Dropshipping", code: "ahue" },
+{ title: "Master the Art of Business Planning", code: "itgi" },
+{ title: "Walk Away from Your 9-to-5 Job", code: "kzgs" },
+{ title: "Save Time and Money", code: "k77e" },
+{ title: "Create a Business Plan", code: "9i3n" },
+{ title: "High-Income Jobs", code: "gafi" },
+{ title: "Quit Your 9-to-5", code: "sapw" },
+{ title: "AI Can Revolutionize", code: "eqea" },
+{ title: "Protect Your Investments", code: "kisa" },
+{ title: "Increase Sales", code: "ka9r" },
+{ title: "Passive Income", code: "kall" },
+{ title: "VIRAL Instagram Reels", code: "2o2r" },
+{ title: "Multiple Languages", code: "i1e3" },
+{ title: "From Dog Walking to Grooming", code: "redo" },
+{ title: "Earn $5,000 on YouTube", code: "irsa" },
+{ title: "Crypto Myths", code: "cbot" },
+{ title: "Make Your Startup Thrive", code: "n8d8" },
+{ title: "Signs That Tell You", code: "imne" },
+{ title: "Avoid Them Now", code: "kavb" },
+{ title: "Professions That Pay Well", code: "matk" },
+{ title: "Create Viral Instagram Reels", code: "etra" },
+{ title: "Affiliate Marketing & AI", code: "macd" },
+{ title: "Juggle Multiple Income Streams", code: "sosi" },
+{ title: "Multilingual Abilities", code: "i5n6" },
+{ title: "Zero Budget, Maximum Reach", code: "2kd5" },
+{ title: "Pet Care Business", code: "veqy" },
+{ title: "Multilingual Abilities", code: "i5n6" },
+{ title: "Avoiding These Trading Errors", code: "maec" },
+{ title: "Crypto Money-Making Myths", code: "trap" },
+{ title: "Tech Gadgets", code: "gass" },
+{ title: "Brand Identities", code: "4b7o" },
+{ title: "Learning 20 Years from Now", code: "3e8n" },
+{ title: "Make THOUSANDS on YouTube", code: "otpg" },
+{ title: "New Entrepreneurs Face", code: "olta" },
+{ title: "Stuck in Your 9-to-5", code: "tvap" },
+{ title: "Creating A Business Plan", code: "aseu" },
+{ title: "Top-Paying Careers", code: "nfak" },
+{ title: "AI-Powered", code: "on2a" },
+{ title: "Viral Reels", code: "89i4" },
+{ title: "Earning More", code: "4er7" },
+{ title: "Pet Sitting and Care", code: "kibn" },
+{ title: "Boost Your Business", code: "k3o5" },
+{ title: "Trading Pitfalls", code: "6a7p" },
+{ title: "Language Skills", code: "ikoo" },
+{ title: "Cryptocurrency Myths", code: "ft66" },
+{ title: "Freelance Brand Designer", code: "сrap" },
+{ title: "Secret Skills", code: "sinj" },
+{ title: "From Idea to Income", code: "matx" },
+{ title: "Make $5,000 on YouTube", code: "cups" },
+{ title: "3D Printing", code: "73ns" },
+{ title: "High-Paid Brand Designer", code: "hufi" },
+{ title: "Built a Business", code: "lite" },
+{ title: "From Virtual to Reality", code: "yjin" },
+{ title: "Skills That You Need", code: "amaz" },
+{ title: "From $26 to Billions Part 1", code: "9LHhD" },
+{ title: "Profiting Big", code: "уnp7" },
+{ title: "Layer One vs. Layer Two Part 2", code: "%F3O7" },
+{ title: "Chill Guy Story Part 2", code: "8YRe2" },
+{ title: "Cash Machine", code: "ekat" },
+{ title: "Time To Leave", code: "clap" },
+{ title: "Affiliate Marketing", code: "xemt" },
+{ title: "Best Jobs", code: "l6i8" },
+{ title: "New Entrepreneurs", code: "i22s" },
+{ title: "Instagram Reels", code: "minp" },
+{ title: "Multiple Income Sources", code: "pacv" },
+{ title: "Get More Customers", code: "ky9b" },
+{ title: "Worst Trading Errors", code: "park" },
+{ title: "Speaking Different Languages", code: "i4h8" },
+{ title: "Making Money With Cryptocurrency", code: "m3ub" },
+{ title: "Taking Care Of Pets", code: "mipa" },
+{ title: "Brand Designer", code: "5t3u" },
+{ title: "Selling Customizable Tech Products", code: "ctgi" },
+{ title: "Chill Guy Story Part 1", code: "$C1Pa" },
+{ title: "Valuable Skills", code: "kity" },
+{ title: "Layer One vs. Layer Two Part 1", code: "!@S24" },
+{ title: "YouTube without Monetization", code: "peie" },
+{ title: "Money-Making Ideas", code: "hitm" },
+{ title: "Real Estate", code: "m9pa" },
+{ title: "New Crypto Debit Card", code: "6RTbn" },
+{ title: "Critical Mistakes", code: "erma" },
+{ title: "Leave Your 9-to-5", code: "clap" },
+{ title: "Business Plan", code: "lilp" },
+{ title: "High-Paying Jobs", code: "pick" },
+{ title: "Profitable Business", code: "cars" },
+{ title: "Top Layer 2 Solutions Revolutionizing Ethereum Today Part 6", code: "1NB&]" },
+{ title: "Affiliate Marketing Strategy", code: "7l3e" },
+{ title: "Memecoins vs Shitcoins Part 6", code: "M3Op6" },
+{ title: "Passive Income", code: "u9ni" },
+{ title: "Instagram Reels", code: "4m4o" },
+{ title: "El Salvador’s Bitcoin Bet Pays Off", code: "bBeW6" },
+{ title: "Business For FREE", code: "7ke7" },
+{ title: "Trading mistakes", code: "erga" },
+{ title: "Multilingual Speaker", code: "i7p5" },
+{ title: "Top Layer 2 Solutions Revolutionizing Ethereum Today Part 5", code: "M8&tR" },
+{ title: "Biggest Lies", code: "4a7b" },
+{ title: "Custom Tech Accessories", code: "gad3" },
+{ title: "Memecoins vs Shitcoins Part 5", code: "2EX&6" },
+{ title: "MicroStrategy’s Bitcoin Holdings", code: "DS09P" },
+{ title: "Evergreen Skills", code: "heri" },
+{ title: "YouTube Without Ads", code: "53h2" },
+{ title: "Profitable Side Hustle", code: "tepo" },
+{ title: "Selling Virtual Land", code: "opg2" },
+{ title: "Designing for Top Brands", code: "capc" },
+{ title: "3D Printing", code: "c7on" },
+{ title: "They Don’t Pay Taxes", code: "ater" },
+{ title: "Top Layer 2 Solutions Revolutionizing Ethereum Today Part 4", code: "LK2S#" },
+{ title: "Virtual Real Eastate", code: "k2сd" },
+{ title: "Meme Coins On the Rise", code: "R%Sa4" },
+{ title: "Memecoins vs Shitcoins Part 4", code: "6PLdq" },
+{ title: "DeFi Revolution", code: "tion" },
+{ title: "Edit Videos", code: "kebe" },
+{ title: "Top Platforms", code: "n4a1" },
+{ title: "From Storage To Startup", code: "5str7gt" },
+{ title: "Top Layer 2 Solutions Revolutionizing Ethereum Today Part 3", code: "M5rqQ" },
+{ title: "Keep More of Their Money", code: "22mb" },
+{ title: "Selling Notion Templates", code: "rida" },
+{ title: "Unlock Crypto Profits", code: "octo" },
+{ title: "$8,200/Month With Computer", code: "kihl" },
+{ title: "Memecoins Vs Shitcoins Part 3", code: "9Ub>2" },
+{ title: "Freelance Video Editors", code: "kiss" },
+{ title: "Successful Business", code: "iekt" },
+{ title: "$10k Monthly", code: "o3tn" },
+{ title: "More BTC Than Satoshi", code: "4YDb0" },
+{ title: "Cryptocurrency İncome", code: "kedr" },
+{ title: "Passive Income Secrets", code: "eryh" },
+{ title: "Rich Know About Taxes", code: "iter" },
+{ title: "$8K/Month Explained", code: "tubr" },
+{ title: "Top Layer 2 Solutions Revolutionizing Ethereum Today Part 2", code: "3NY&%" },
+{ title: "From Hobby To Hustle", code: "l8a3" },
+{ title: "Types of Ethereum’s Layer 2 Solutions Part 6", code: "2NbXZ" },
+{ title: "Start a Business", code: "obet" },
+{ title: "Memecoins vs Shitcoins Part 2", code: "?%R7K" },
+{ title: "What Is DeFi?", code: "t2i6" },
+{ title: "Ultimate Toolkit for Making Money", code: "teba" },
+{ title: "Home Editing Videos", code: "klum" },
+{ title: "Selling Notion Templates", code: "7da4" },
+{ title: "Legally Avoid Paying Taxes", code: "h2cd" },
+{ title: "Freelance Video Editors", code: "awto" },
+{ title: "Top Layer 2 Solutions Revolutionizing Ethereum Part 1", code: "0PCVd" },
+{ title: "DeFi Explained", code: "3si5" },
+{ title: "Types of Ethereum’s Layer 2 Solutions Part 5", code: "&GqA3" },
+{ title: "Transform Your Garage", code: "7grt" },
+{ title: "Smart Tools", code: "6t7o" },
+{ title: "Memecoins Vs Shitcoins", code: "U87%R" },
+{ title: "Video Editing", code: "ires" },
+{ title: "Made $8,200/Month", code: "6do5" },
+{ title: "Secrets Millionaires", code: "5d2e" },
+{ title: "Notion Templates", code: "r2i4" },
+{ title: "Earn $10K Monthly Using DeFi", code: "7p8o" },
+{ title: "Layer 1 vs. Layer 2 | Part 2", code: "2Dp7T" },
+{ title: "Money-Making Machine", code: "5stt" },
+{ title: "Create and Sell", code: "ufos" },
+{ title: "Boost Your Crypto Profits", code: "8o4c" },
+{ title: "Types of Ethereum’s Layer 2 Solutions Part 4", code: "%g1M0" },
+{ title: "Peanut The Squirrel", code: "P&dE4" },
+{ title: "Augmented Reality Boom", code: "resh" },
+{ title: "Ways To Make Money", code: "pves" },
+{ title: "Work From Home", code: "purp" },
+{ title: "From Virtual To Real", code: "4s6h" },
+{ title: "Create Clothing Brand", code: "uprt" },
+{ title: "Layer 1 vs. Layer 2", code: "N1%rE" },
+{ title: "Best Dropshipping Products", code: "wial" },
+{ title: "Earn Money Immediately", code: "3e9s" },
+{ title: "Types Of Ethereum’s Layer 2 Solutions | Part 3", code: "3WQ@#" },
+{ title: "50M Tokens Distributed to 160K Users", code: "3K%pg" },
+{ title: "High-Income Side Hustle", code: "r8e5" },
+{ title: "Income From Home", code: "pedr" },
+{ title: "Launch Your Own Fashion Line", code: "qurt" },
+{ title: "From Zero to Hero", code: "a4l7" },
+{ title: "Types of Ethereum’s Layer 2 Solutions Part 2", code: "1CV&1" },
+{ title: "Ethereum’s Layer 2 Revolution Part 4", code: "3T&?W" },
+{ title: "Quantum Computing Breakthrough", code: "5KpTR" },
+{ title: "Fast Money Ideas", code: "pivo" },
+{ title: "Top Home-Based Side Hustles", code: "4l88" },
+{ title: "Types of Ethereum’s Layer 2 Solutions Part 1", code: "—wait—" },
+{ title: "Ethereum’s Layer 2 Revolution Part 3", code: "8AQ@g" },
+{ title: "Hottest Dropshipping Products", code: "fabe" },
+{ title: "My Clothing Line", code: "i3me" },
+{ title: "Ethereum’s Layer 2 Revolution Part 3", code: "8AQ@g" },
+{ title: "Telegram’s Crypto Holding Surge To $1.3 billion", code: "9OPyf" },
+{ title: "Augmented Reality", code: "efir" },
+{ title: "Make Money By Tomorrow", code: "anaj" },
+{ title: "Earn Extra Cash", code: "2rp5" },
+{ title: "Unlock the Future", code: "atif" },
+{ title: "Clothing Brand", code: "must" },
+{ title: "Winning Dropshipping Products", code: "krwi" },
+{ title: "Ethereum’s Layer 2 Revolution Part 2", code: "%2BRe" },
+{ title: "Quick Money", code: "kawa" },
+{ title: "Future Of Staking & Web3 Part 3", code: "JP09K" },
+{ title: "Make Money From Home", code: "g2pu" },
+{ title: "Bitcoin Revolution & Bold Predictions", code: "m8L?H" },
+{ title: "Dropshipping Products", code: "6ne9" },
+{ title: "Successful Clothing Brand", code: "kite" },
+{ title: "Products You Need to Sell Now", code: "vmre" },
+{ title: "Secret Side Hustle", code: "i1ze" },
+{ title: "Amazing Jobs", code: "d2r2" },
+{ title: "Staking Deep Dive Part 6", code: "V&6?9" },
+{ title: "Build A Business", code: "96al" },
+{ title: "Make Money With Your Creativity", code: "ebrj" },
+{ title: "Ethereum’s Layer 2 Revolution Part 1", code: "1NpY6" },
+{ title: "Future of Staking & Web3 Part 2", code: "1%CDe" },
+{ title: "From Garbage To Gold", code: "alte" },
+{ title: "From Boring to Bank", code: "l8e6" },
+{ title: "Easiest Way to Start Earning Money", code: "gipn" },
+{ title: "TikTok Niche Hacks", code: "b8st" },
+{ title: "Being Your Own Boss", code: "5eer" },
+{ title: "Be Smarter, Faster", code: "qpon" },
+{ title: "Turn Reposts Into Revenue", code: "o7ry" },
+{ title: "Leadership Skills", code: "cell" },
+{ title: "Staking Deep Dive Part 5", code: "JiO0%" },
+{ title: "Boost Your TON Part 2", code: "?P&43" },
+{ title: "Extra Income Building Connections", code: "bs68" },
+{ title: "Broke Into Tech", code: "patr" },
+{ title: "Passion Into A Paycheck", code: "9pa2" },
+{ title: "Future Of Staking & Web3 Part 1", code: "Z8#Wq" },
+{ title: "Best Products To Sell", code: "4o86" },
+{ title: "Start Earning With Alibaba In 2024", code: "33r7" },
+{ title: "Spotify Playlist Curations", code: "mitq" },
+{ title: "How I Made $5,000+", code: "e52e" },
+{ title: "Staking Deep Dive Part 4", code: "3NBgd" },
+{ title: "Selling Printable Coloring Pages", code: "9tqe" },
+{ title: "Top 7 Fan Tokens Part 4", code: "m*T%7" },
+{ title: "Best Jobs That Pay Well", code: "n2g7" },
+{ title: "Transform Scrap into Treasure", code: "ca1t" },
+{ title: "Boost Your TON Part 1", code: "5KiOu" },
+{ title: "Stay Ahead of Your Generation", code: "kise" },
+{ title: "The Realities of Entrepreneurship", code: "e9mb" },
+{ title: "Make $10K Monthly", code: "btfo" },
+{ title: "Safe Content Reposting", code: "2m34" },
+{ title: "Staking Deep Dive Part 3", code: "2W%fR" },
+{ title: "Learn Coding Fast", code: "t83a" },
+{ title: "Leadership Potential", code: "95iv" },
+{ title: "Top 7 Fan Tokens Part 3", code: "3$#Wq" },
+{ title: "Best Fun Jobs", code: "3u8m" },
+{ title: "Earn Cash Just By Talking Online", code: "blya" },
+{ title: "Bitcoin Soars To $99K", code: "G)*5B" },
+{ title: "Start Your Path To Millions", code: "n4c3" },
+{ title: "Profit from Your Spotify Playlists", code: "86ne" },
+{ title: "Start Earning With Alibaba", code: "wieb" },
+{ title: "Make Money Selling Fun", code: "b8s6" },
+{ title: "Passive Income With Online Quizzes", code: "6rjo" },
+{ title: "Top 7 Fan Tokens Part 1", code: "kD09&" },
+{ title: "Staking Deep Dive Part 2", code: "2$Er#" },
+{ title: "Staking Deep Dive Part 1", code: "Y&27D" },
+{ title: "Jobs That Make You Rich", code: "qkis" },
+{ title: "Top 7 Fan Tokens Part 2", code: "2De#@" },
+{ title: "Made $2,000/Month", code: "bufl" },
+{ title: "Mastered Coding In 60 Days", code: "b58e" },
+{ title: "Fan Token Secrets Part 3", code: "2AsQi" },
+{ title: "Money From Trash", code: "p2d2" },
+{ title: "Top 1% Teens Do Differently", code: "o42p" },
+{ title: "Owning A Business", code: "qite" },
+{ title: "Wrapped Bitcoin Drama", code: "3GtY&" },
+{ title: "TikTok Niches", code: "boch" },
+{ title: "Motivate And Empower", code: "8sit" },
+{ title: "Monetize TikTok", code: "gpez" },
+{ title: "Get Paid To Have Fun", code: "unge" },
+{ title: "Millionaire In A Low-Income Country", code: "8ipo" },
+{ title: "Fan Token Secrets Part", code: "2AsQi" },
+{ title: "Made $1,000 From Spotify", code: "52mo" },
+{ title: "Knowledge Into Cash", code: "74g8" },
+{ title: "Turn Your Art Into Cash", code: "4lo4" },
+{ title: "Profit From Alibaba", code: "96v2" },
+{ title: "Most Unwanted Jobs", code: "32j1" },
+{ title: "Fan Tokens", code: "7dW$#" },
+{ title: "Successful Teen", code: "sick" },
+{ title: "Turn Old Junk Into Cash", code: "edur" },
+{ title: "Texas Considers Bitcoin Reserve", code: "KA5Q4" },
+{ title: "Fan Token Secrets Part 2", code: "4&HgF" },
+{ title: "Start A Business", code: "s2ep" },
+{ title: "Faceless Tiktok Niches", code: "gb26" },
+{ title: "From Zero To Programmer", code: "clap" },
+{ title: "Become A Leader", code: "4p2o" },
+{ title: "Earn $20K Reposting Content", code: "8e7m" },
+{ title: "Get Paid To Chat", code: "brol" },
+{ title: "Stake Ethereum With Lido Part 4", code: "03MP7" },
+{ title: "Animations Into Real Money", code: "gt5o" },
+{ title: "Fan Tokens", code: "3DFR$" },
+{ title: "Monetize Your Creativity", code: "c64s" },
+{ title: "Sharing Your Dreams", code: "kice" },
+{ title: "BlackRock & OCC", code: "LM$?q" },
+{ title: "LinkedIn Profile", code: "mnws" },
+{ title: "Escape Rooms for Big Profits", code: "hgr8" },
+{ title: "Scale your UGC Business", code: "5e4r" },
+{ title: "Profitable ASMR Niches", code: "c99e" },
+{ title: "Fan Token Secrets Part 1", code: "g=%EV" },
+{ title: "Custom GIFs Online", code: "t9ao" },
+{ title: "Sell Your Vision", code: "7o1r" },
+{ title: "Stake Ethereum With Lido Part 3", code: "2MoP0" },
+{ title: "Easy Passive Income", code: "c3e5" },
+{ title: "Got Dream Job", code: "87do" },
+{ title: "Fan Tokens Part 1", code: "kK7&T" },
+{ title: "Full-Time Income Stream", code: "1nne" },
+{ title: "Passive Income With UGC", code: "94sb" },
+{ title: "Monetizing Your Dreams", code: "e4fu" },
+{ title: "Viral GIFs", code: "2o1o" },
+{ title: "Whispering Skills", code: "w7ip" },
+{ title: "ETH Staking Part 5", code: "Pm)(%" },
+{ title: "Stake Ethereum With Lido Part 2", code: "1xSwR" },
+{ title: "$10K/month Business", code: "co9r" },
+{ title: "Crypto Alert", code: "V7EgL" },
+{ title: "Designing Virtual Escape Rooms", code: "43i8" },
+{ title: "Master LinkedIn", code: "22in" },
+{ title: "Content Creation Skills", code: "l7o3" },
+{ title: "Content That Pays Big", code: "4act" },
+{ title: "Animated GIFs", code: "77po" },
+{ title: "Profit From Your Passion", code: "8g52" },
+{ title: "Turn Puzzles Into Profits", code: "c843" },
+{ title: "ETH Staking Part 4", code: "&G23U" },
+{ title: "Use LinkedIn", code: "xp6w" },
+{ title: "LUNA & UST Crash Explained 5", code: "E@2jb" },
+{ title: "Monetize Your Imagination", code: "kiwi" },
+{ title: "UGC Content", code: "loop" },
+{ title: "TON Gets Major Boost With $20M Fund", code: "b&%7H" },
+{ title: "Creating ASMR Videos", code: "8p2r" },
+{ title: "Profitable Industries", code: "9yam" },
+{ title: "Sell Without Any Hassle", code: "6e8d" },
+{ title: "Make Money Teaching", code: "qwed" },
+{ title: "ETH Staking Part 3", code: "3H@T5" },
+{ title: "Instagram Reels and Get Paid", code: "64ha" },
+{ title: "From Design To Dollars", code: "xter" },
+{ title: "Stake Ethereum With Lido", code: "M7&tY" },
+{ title: "Break the Age Barrier", code: "s7b2" },
+{ title: "LUNA & UST Crash Explained Part 4", code: "3D#Zq" },
+{ title: "Zero To $1,000 FAST", code: "9y44" },
+{ title: "Cash Machine", code: "2m9y" },
+{ title: "Language Skills", code: "7u9r" },
+{ title: "World’s Wealthiest People", code: "weo5" },
+{ title: "Sell Your Used Clothes", code: "set3" },
+{ title: "Earning With Instagram Reels", code: "u98g" },
+{ title: "Ethereum Breaks Records", code: "0M91%" },
+{ title: "Sell Your Canva", code: "tope" },
+{ title: "ETH Staking Part 2", code: "D4$1&" },
+{ title: "Steady Online Income", code: "qeo8" },
+{ title: "LUNA & UST Crash Explained Part 3", code: "rP=4@" },
+{ title: "ChatGPT Side Hustle", code: "t2u9" },
+{ title: "Monetize Your YouTube", code: "d6a3" },
+{ title: "Language Lessons From Home", code: "a4ct" },
+{ title: "Ordinary people into Billionare", code: "85s4" },
+{ title: "Decluttering Your Wardrobe", code: "7e9s" },
+{ title: "Instagaram Reels Monetization", code: "l5a6" },
+{ title: "Earning Rewards Part 4", code: "Gda6C" },
+{ title: "Sell Like A Pro", code: "3i1n" },
+{ title: "Hackers Strike Again", code: "De$fG" },
+{ title: "Build An Online Income", code: "5d4h" },
+{ title: "Eth Staking Part 1", code: "5Bd%F" },
+{ title: "Ultimate ChatGPT Hack", code: "u43z" },
+{ title: "First $10,000 On YouTube", code: "83hr" },
+{ title: "Teaching Languages Online", code: "5f62" },
+{ title: "Top Industries", code: "6h1e" },
+{ title: "Selling Old Clothes", code: "42tb" },
+{ title: "Making Viral Reels", code: "1top" },
+{ title: "Canva Templates", code: "m482" },
+{ title: "No Age Limit", code: "6l3e" },
+{ title: "ChatGPT Without Any Investment", code: "adam" },
+{ title: "Simple YouTube Tricks", code: "h7es" },
+{ title: "Income froom Your Gaming Videos", code: "92en" },
+{ title: "Get Rich In 2025", code: "y7cle" },
+{ title: "LUNA & UST Crash Explained 2", code: "#7GgR" },
+{ title: "Crypto Trends 2024", code: "2BbY&" },
+{ title: "Earning Rewards Part 3", code: "N?#Eq" },
+{ title: "Get Involved, Earn, and Collect! Part 3", code: "&8QLf" },
+{ title: "Make Money From Home", code: "ge3ph" },
+{ title: "Low-Effort Online Income", code: "ation" },
+{ title: "Get Paid Every Day", code: "5erm" },
+{ title: "LUNA & UST Crash Explained 1 Main Story", code: "2Ad]#" },
+{ title: "Boost Your Income In 2025", code: "9r2c5" },
+{ title: "YouTube Gamer", code: "5to6k" },
+{ title: "Graphic Design Jobs", code: "7a2sh" },
+{ title: "Earning Rewards Part 2", code: "d%98N" },
+{ title: "Money With Minimal Work", code: "6uln" },
+{ title: "Best Platforms", code: "82wr" },
+{ title: "Powerful AI Tools", code: "6pe9" },
+{ title: "Grow 100,000 Followers", code: "3ing" },
+{ title: "Achieve $6,500", code: "4ppy" },
+{ title: "Get Involved, Earn, and Collect Part 2", code: "&8QLf" },
+{ title: "Social Media", code: "l6lo" },
+{ title: "McDonald’s x Doodles Collab", code: "5M3%&" },
+{ title: "Earning Rewards Part 1", code: "3Mb&D" },
+{ title: "Relaxed Methods", code: "tine" },
+{ title: "Traffic Arbitrage", code: "shtag" },
+{ title: "Become a Millionaire", code: "roof" },
+{ title: "Profit from Your Music", code: "5ns2" },
+{ title: "Fiverr In 2025", code: "nd1er" },
+{ title: "High-Demand Digital Products", code: "3tomm" },
+{ title: "Earn On your Tweets!", code: "7De5R" },
+{ title: "Get Involved, Earn, and Collect! Part 1", code: "6Nd%Y" },
+{ title: "Earning With Your Drone", code: "sday" },
+{ title: "TikTok Account", code: "i8ng" },
+{ title: "Info Finance X Blockchain X AI", code: "K8[e&" },
+{ title: "Twitch Tactics", code: "hpful" },
+{ title: "Flipping Furniture", code: "8e2ce" },
+{ title: "Generate Income Online", code: "uate" },
+{ title: "Turn Your Smartphone", code: "sorship" },
+{ title: "Gaming Channel", code: "9s5h" },
+{ title: "Unlock Rewards Part 3", code: "5Fkd&" },
+{ title: "Profitable Ideas", code: "t6bh" },
+{ title: "Money-Making Methods", code: "pitn" },
+{ title: "Listing Date Is Closer Part 2", code: "1TS$2" },
+{ title: "Listing Date Is Closer Part 1", code: "T1#S5" },
+{ title: "Secret Gaining 100,000 Followers", code: "amaz" },
+{ title: "Sites That Pay You", code: "9va5" },
+{ title: "Forex Trading", code: "8h1a" },
+{ title: "$100,000 in Income With Social Media", code: "h2e7" },
+{ title: "Generate Income Online", code: "r5ou" },
+{ title: "Traffic Arbitrage", code: "h8a7" },
+{ title: "Crypto Projects", code: "7wp4" },
+{ title: "Start Making Money with NFTs Part 4", code: "$F12@" },
+{ title: "Monetize Your Music", code: "8n3eo" },
+{ title: "Unlock Rewards Part 2", code: "K5S#3" },
+{ title: "Bitcoin Hits $93K and Even More!", code: "Oi7*A" },
+{ title: "Money on Fiverr", code: "9ki7r" },
+{ title: "Digital Products Online", code: "3orow" },
+{ title: "Flying Your Drone", code: "6tue" },
+{ title: "Cash On Twitch", code: "h3el" },
+{ title: "TikTok In 2025", code: "morn" },
+{ title: "Hobby into a Money-Making Business", code: "grad" },
+{ title: "Start Making Money with NFTs Part 3", code: "Ey*Nb" },
+{ title: "Furniture Flipping Business", code: "p66i" },
+{ title: "Sei Network Ambassador Challenge Part 5", code: "8GpnM" },
+{ title: "Money-Making Apps", code: "ce7n7" },
+{ title: "YouTube Channel Gaming", code: "5c8a" },
+{ title: "Build Wealth In 2025", code: "4s7u" },
+{ title: "Graphic Design Skills", code: "2c8h" },
+{ title: "Unlock Rewards Part 1", code: "@R#7Y" },
+{ title: "Earn Money Online", code: "4can" },
+{ title: "Daily Payments", code: "s7ug" },
+{ title: "Sei Network Ambassador Challenge Part 4", code: "3Aqw$" },
+{ title: "Secret Method To Sell", code: "puter" },
+{ title: "Turn Viewers Into Buyers", code: "4ate1" },
+{ title: "Zero-Cost Business Ideas", code: "8tgz" },
+{ title: "Start Making Money with NFTs Part 2", code: "3Tp&e" },
+{ title: "Lucrative Niches", code: "wo9p1" },
+{ title: "Secret Investment Tactics", code: "76n2g" },
+{ title: "Start Career In IT", code: "7oin2" },
+{ title: "OpenSea 2.0 Launch!", code: "5$%hG" },
+{ title: "Find Clients On Freelance", code: "6yta" },
+{ title: "Make Money From Home", code: "2o4n6" },
+{ title: "Extra Cash For 2025", code: "ait7y" },
+{ title: "Sei Network Ambassador Part 3", code: "3#DaP" },
+{ title: "Turning $100 to $10,000", code: "ued6" },
+{ title: "Making Mone Everyday", code: "comr" },
+{ title: "Start Making Money With NFTs Part 1", code: "H9#ka" },
+{ title: "Secret Techniques", code: "5str" },
+{ title: "Profitable Business Ideas", code: "1tefy" },
+{ title: "Sai Network Ambassador Challenge Part 2", code: "KF7y4" },
+{ title: "Online Courses", code: "3po7e" },
+{ title: "Investing in 2025", code: "91ki" },
+{ title: "Make $100,000 In IT", code: "2le6c" },
+{ title: "Make $10,00 Online", code: "28r1e" },
+{ title: "Source Of Income", code: "iti8" },
+{ title: "Memeland Unveiled Part 6", code: "9*JR$" },
+{ title: "Maximizing Your Income", code: "aabily" },
+{ title: "Bitget Wallet Lite", code: "3Nm&p" },
+{ title: "Make Money Through Launchpad", code: "urm1" },
+{ title: "Make $16,500 Every Day", code: "perr" },
+{ title: "Sai Network Ambassador Challenge Part 1", code: "5F0Lm" },
+{ title: "Convince Customers", code: "9u2b3" },
+{ title: "Business Ideas To Launch", code: "4b5n2" },
+{ title: "High-Income Niches", code: "8t1r3" },
+{ title: "Teenagers Investing", code: "4t8a" },
+{ title: "Lucrative IT Jobs", code: "4a1b7" },
+{ title: "Unlock Moonbeam’s Potential Part 3", code: "2Vb&E" },
+{ title: "Make $10,000 with Freelance", code: "3y9wa" },
+{ title: "Memeland Unveiled Part 5", code: "3N4+T" },
+{ title: "Make Money with Your Voice", code: "quis" },
+{ title: "Top Skills For Freelances", code: "aunty" },
+{ title: "SafePal Banking Revolution", code: "hg8#2" },
+{ title: "Earning $10,000 Monthly", code: "unfi" },
+{ title: "Selling EBooks Online", code: "s6ur" },
+{ title: "Get People to Buy Your Product", code: "7snq" },
+{ title: "Business With Zero Investment", code: "s7u3" },
+{ title: "Creating Profitable Online Courses", code: "4tsf" },
+{ title: "Unlock Moonbeam’s Potential Part 2", code: "&gRe8" },
+{ title: "Guide To Investing", code: "6tseg" },
+{ title: "Memeland Unveiled Part 4", code: "9(&TR" },
+{ title: "No-Code IT Positions", code: "1s5t9" },
+{ title: "Freelancing Platforms In 2025", code: "7s3pu" },
+{ title: "Why MicroStrategy is Betting $42 Billion on Bitcoin", code: "7khUy" },
+{ title: "Earn Money Using Your Voice", code: "5a2c9" },
+{ title: "Freelance Skills", code: "accoy" },
+{ title: "Journey With No Money", code: "p7a6c" },
+{ title: "Stay-At-Home Parents", code: "pshot" },
+{ title: "Launchpad And Launchpool", code: "unco" },
+{ title: "Real Estate for Beginners", code: "sh4ot" },
+{ title: "Memeland Unveiled Part 3", code: "TR^6Q" },
+{ title: "Unlock Profit Potential", code: "p3age" },
+{ title: "Side Hustles", code: "5hing" },
+{ title: "USDT Scandal", code: "CB6t$" },
+{ title: "Achieve Millionaire Status", code: "n4e6t" },
+{ title: "Create & Sell Online Courses For Profit", code: "g1nal" },
+{ title: "$5,500/Month With Al", code: "echain" },
+{ title: "Build a Six-Figure Online Agency", code: "8o3rt" },
+{ title: "Profitable Freelancer", code: "oi1n6" },
+{ title: "Tapswap & Binance Big Promo", code: "2XZak" },
+{ title: "Tapswap Big Updates Part 2", code: "3e@kH" },
+{ title: "Financial Freedom", code: "ro9ot" },
+{ title: "Online Business Ideas", code: "l5ing" },
+{ title: "Game Changers", code: "l4e81" },
+{ title: "Tapswap Big Updates Part 1", code: "*r&8Q" },
+{ title: "Demand Products", code: "a9r2d" },
+{ title: "$5,000/Month On EBay", code: "lement" },
+{ title: "Remote Work For Parents", code: "sn1a7" },
+{ title: "Zero Down Payment", code: "29s4c" },
+{ title: "Investing In Real Estate", code: "snaps" },
+{ title: "Domain Flipping", code: "s7lip" },
+{ title: "Memeland Unveiled Part 2", code: "K7UQ4" },
+{ title: "Make Extra Cash", code: "slasg" },
+{ title: "Pudgy Penguins Story Part 5", code: "DE5&)" },
+{ title: "Low Salary", code: "3s1ky" },
+{ title: "Teaching Online", code: "9s6i4" },
+{ title: "Crypto Tax Benefits In Hong Kong", code: ")7fsq" },
+{ title: "AI For Text Writing", code: "3s6id" },
+{ title: "Digital Agency", code: "7s25h" },
+{ title: "Make Money With Freelancing", code: "shitc" },
+{ title: "Digital Nomad Business Ideas", code: "4shil" },
+{ title: "FIRE Method 101", code: "t1a7p" },
+{ title: "Memeland Unaveiled Part 1", code: "LG9GF" },
+{ title: "They Changed Our World", code: "t5a8ng" },
+{ title: "Pudgy Penguins Story Part 4", code: "MAS%3" },
+{ title: "Print On Demand Products", code: "4s8hd" },
+{ title: "Flipping Items On EBay", code: "sett6" },
+{ title: "$50k Ton Giveaway!", code: "5P=DF" },
+{ title: "Secrets About Telegram", code: "urity" },
+{ title: "Survive College", code: "81p3s" },
+{ title: "Lazy Weekend", code: "6rypt" },
+{ title: "Amazon Strategy", code: "81tgy" },
+{ title: "Thriving Online Business", code: "8opiq" },
+{ title: "Pudgy Penguins Story Part 3", code: "WV8*4" },
+{ title: "Crypto Heist", code: "n7)@h" },
+{ title: "How To Save First Money", code: "geting" },
+{ title: "Studying Full-Time", code: "296ps" },
+{ title: "Pudgy Penguins Story Part 2", code: "Q3#PM" },
+{ title: "Cash Machine", code: "taking" },
+{ title: "How to Get Rich", code: "t2e1d" },
+{ title: "Build Wealth From Scratch", code: "9iner" },
+{ title: "Get Investors", code: "r2ding" },
+{ title: "Land A Remote Job", code: "48ale" },
+{ title: "No Experience Needed", code: "9k2as" },
+{ title: "Earn Big In Crypto Part 6", code: "9&?SW" },
+{ title: "Small Town Success", code: "13eur" },
+{ title: "Earn Big In Crypto Part 5", code: "?5\PA" },
+{ title: "Telegram Wallet", code: "3s7ec" },
+{ title: "Simple Side Hustles", code: "ps2ct" },
+{ title: "Earn Big In Crypto Part 4", code: "ASX6Z" },
+{ title: "Make $4,000+ Monthly", code: "r1u5s" },
+{ title: "Zero Investment", code: "4rwg1" },
+{ title: "Save Your First $10,000", code: "retarg" },
+{ title: "Money From Your Phone", code: "r9es5" },
+{ title: "Traps Keeping You Poor", code: "regula" },
+{ title: "Earn Big In Crypto Part 3", code: "X5OUT" },
+{ title: "Side Hustles for Rural Towns", code: "e8pap" },
+{ title: "Earn Big In Crypto Part 2", code: "9Q3#G" },
+{ title: "Starting From Zero", code: "honeym" },
+{ title: "Earn Big In Crypto Part 1", code: "Q82V%" },
+{ title: "Get Funding with No Cash Upfront", code: "zksha" },
+{ title: "Remote Jobs", code: "zkorac" },
+{ title: "Full-Time Students", code: "54z1s" },
+{ title: "Big Earnings In Small Town", code: "h2it5" },
+{ title: "Extra Cash For Motivated", code: "elis6t" },
+{ title: "Successful Remote Work", code: "bl2e1" },
+{ title: "Pudgy Penguins Story Part 1", code: "UPD9&" },
+{ title: "GOAT Token Hits $1B Cap", code: "35BNY" },
+{ title: "Sell Your Art Like a Pro", code: "4rte2i" },
+{ title: "Side Hustles In Small Town", code: "hw7qp" },
+{ title: "The Gateway By TON", code: "8!CV9" },
+{ title: "Top Side Hustles", code: "wuhi9t" },
+{ title: "Stay Productive", code: "w4h9a" },
+{ title: "Art Into a Thriving Online Business", code: "k9swd" },
+{ title: "Gaming Into Cash", code: "l4le1t" },
+{ title: "Game Playtesting", code: "g8wqa" },
+        ];
+
+        function displayTasks(taskArray) {
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
+            const totalTasks = taskArray.length;
+
+            taskArray.forEach((task, index) => {
+                const taskNumber = totalTasks - index;
+                taskList.innerHTML += `
+                    <div class="task">
+                        <div class="task-number">Task ${taskNumber}</div>
+                        <h2>${task.title}</h2>
+                        <button onclick="copyCode('${task.code}', this)">
+                            <i class="fas fa-copy"></i> Copy Code
+                        </button>
+                        <p class="copy-message">Code copied!</p>
+                    </div>
+                `;
+            });
+        }
+
+        function copyCode(code, button) {
+            navigator.clipboard.writeText(code).then(() => {
+                const message = button.nextElementSibling;
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function filterTasks() {
+            const query = document.getElementById('searchQuery').value.toLowerCase();
+            const filteredTasks = tasks.filter(task => task.title.toLowerCase().includes(query));
+            displayTasks(filteredTasks);
+        }
+
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > lastScrollY && window.scrollY > 50) {
+                header.classList.add('hidden');
+            } else if (window.scrollY < lastScrollY || window.scrollY === 0) {
+                header.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        window.onload = () => displayTasks(tasks);
+
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable copy shortcut (Ctrl+C)
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+                e.preventDefault();
+            }
+        });
+
+        // Donation Modal functionality
+        const donateButton = document.createElement('button');
+        donateButton.textContent = 'Donate';
+        donateButton.style.position = 'fixed';
+        donateButton.style.bottom = '20px';
+        donateButton.style.right = '20px';
+        donateButton.style.padding = '10px 20px';
+        donateButton.style.borderRadius = '50px';
+        donateButton.style.backgroundColor = '#6200ea';
+        donateButton.style.color = 'white';
+        donateButton.style.fontSize = '16px';
+        donateButton.style.cursor = 'pointer';
+        document.body.appendChild(donateButton);
+
+        donateButton.addEventListener('click', () => {
+            const modalContent = `
+                <div style="background: white; padding: 20px; border-radius: 10px; width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <h2>Donation</h2>
+                    <div style="margin: 20px 0;">
+                        <h3>Toncoin</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrViWg0D72Yqmv2P4r2vO7arNp_IoIofGKyw&s" alt="Toncoin" style="width: 50px; height: 50px;">
+                        <div>
+                            <span style="display:block; margin-top: 10px;">Toncoin address:</span>
+                            <span id="ton-address" style="color: #6200ea; cursor: pointer;">UQA6QnFFmNnIOaPXZWeQpapfwZLqUxvr5VuiVpTrROe4p1QE</span>
+                        </div>
+                    </div>
+                    <div style="margin: 20px 0;">
+                        <h3>Ye Buna</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLR1fEsvXg96FPxRI6_ISLTlQ-warQBL5qQ&s" alt="Ye Buna" style="width: 50px; height: 50px;">
+                        <div>
+                            <span style="display:block; margin-top: 10px;">
+                                <a href="https://ye-buna.com/plowler" target="_blank" style="color: #6200ea; text-decoration: none;">ye-buna.com/plowler</a>
+                            </span>
+                        </div>
+                    </div>
+                    <button onclick="closeModal()">Close</button>
+                </div>
+            `;
+
+            const modalOverlay = document.createElement('div');
+            modalOverlay.style.position = 'fixed';
+            modalOverlay.style.top = '0';
+            modalOverlay.style.left = '0';
+            modalOverlay.style.width = '100%';
+            modalOverlay.style.height = '100%';
+            modalOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            modalOverlay.style.display = 'flex';
+            modalOverlay.style.alignItems = 'center';
+            modalOverlay.style.justifyContent = 'center';
+            modalOverlay.innerHTML = modalContent;
+
+            document.body.appendChild(modalOverlay);
+
+            document.getElementById('ton-address').addEventListener('click', () => {
+                navigator.clipboard.writeText('UQA6QnFFmNnIOaPXZWeQpapfwZLqUxvr5VuiVpTrROe4p1QE').then(() => {
+                    alert('Ton wallet address copied!');
+                });
+            });
+        });
+
+        function closeModal() {
+            const modalOverlay = document.querySelector('div[style*="position: fixed"]');
+            if (modalOverlay) {
+                modalOverlay.remove();
+            }
+        }
+    </script>
+</body>
+</html>
